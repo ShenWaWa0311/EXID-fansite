@@ -1,19 +1,19 @@
 /* ### 版面設計 ###*/
 
 body {
-	margin: 24px 10px;
-	font-family: Arial, '微軟正黑體', sans-serif;
+    margin: 14px 10px;
+    font-family: Arial, '微軟正黑體', sans-serif;
 }
 
 
 #container{
-	width: 1000px;
-	margin: auto;
+    width: 960px;
+    margin: auto;
 }
 
 header{
-	margin-bottom: 8px;
-	overflow: hidden;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
 
@@ -22,17 +22,17 @@ header{
 /* overflow:hidden 將多的區塊隱藏，版面比較好看 */
 
 #Topnews{
-	margin-bottom: 38px;
-	overflow: hidden;
+    margin-bottom: 35px;
+    overflow: hidden;
 }
 
-#Oldnews{
-margin-bottom: 0px;
+#content{
+margin-bottom: 30px;
 overflow: hidden;
 }
 
 footer{
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -42,11 +42,11 @@ footer{
 /*LOGO*/
 
 #banner{
-	float: left;
+    float: left;
 }
 
 #banner h1{
-margin: 0;
+margin: 10;
 }
 
 
@@ -54,9 +54,9 @@ margin: 0;
 /* container設960，三分法原則，site img 設300-360都蠻好看的 */
 
 #banner img{
-	vertical-align: bottom;
-	width: 270px;
-    height:80px;
+    vertical-align: bottom;
+    width: 230px;
+    margin-left: 15px;
 }
 
 
@@ -65,23 +65,23 @@ margin: 0;
 /* padding和margin差異可看講義*/
 
 nav{
-	float: right;
-	font-size: 15px;
-	font-family: 'Ubuntu', sans-serif;
-	padding-top: 0px
+    float: right;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 30px
 }
 
 nav ul{
-    margin-top:30;
     margin-left:0;
-	padding: 0;
+    padding: 0;
 }
 
 
 /* list-style-type: none 可把原本有序列表的點點取消*/
 nav li{
-	list-style-type: none;
-	float: left;
+    list-style-type: none;
+    float: left;
+    margin-right: 15px;
 }
 
 
@@ -101,7 +101,7 @@ nav li a {
     display: block;
     float: left;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-decoration: none;
     border-bottom: solid 3px transparent;
     color: #e77096
@@ -119,17 +119,16 @@ nav li a:hover {
 #Topnews img {
     float: left;
     vertical-align: bottom;
-    width: 1000px;
+    width: 780px;
 }
 
 
 /*  Topnews LEAD*/
 #Topnews #lead {
-    float: center;
-    width: 1000px;
+    float: left;
+    width: 400px;
     color: #ffffff;
-    margin-left: 0px;
-    text-align:center
+    margin-left: 13px;
 }
 
 #Topnews h2 {
@@ -139,14 +138,14 @@ nav li a:hover {
 #Topnews .more {
     font-size: 18px;
     font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
-    text-align: center;
+    text-align: right;
 }
 
 
 /* 用CSS寫按鈕!!!*/
 #Topnews.more a {
-    color: #000000;
-    background-image: url(img/2017/click.svg);
+    color: #e77096;
+    background-image: url(??????);
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: right center;
@@ -160,11 +159,11 @@ nav li a:hover {
 #Topnews {
     background-color: #eee8c4;
     background: -webkit-gradient(linear, left top, left bottom, from(#eee8c4), to(#e77096));
-    background: -webkit-linear-gradient(#eee8c4 30%, #e77096 65%, #938ac9 100%);
-    background: -moz-linear-gradient(#eee8c4 30%, #e77096 65%, #938ac9 100%);
-    background: -o-linear-gradient(#eee8c4 30%, #e77096 65%, #938ac9 100%);
-    background: -ms-linear-gradient(#eee8c4 30%, #e77096 65%, #938ac9 100%);
-    background: linear-gradient(#eee8c4 30%, #e77096 65%, #938ac9 100%);
+    background: -webkit-linear-gradient(#eee8c4 0%, #e77096 50%, #938ac9 100%);
+    background: -moz-linear-gradient(#eee8c4 0%, #e77096 50%, #938ac9 100%);
+    background: -o-linear-gradient(#eee8c4 0%, #e77096 50%, #938ac9 100%);
+    background: -ms-linear-gradient(#eee8c4 0%, #e77096 50%, #938ac9 100%);
+    background: linear-gradient(#eee8c4 0%, #e77096 50%, #938ac9 100%);
     overflow: hidden;
 }
 
@@ -175,10 +174,9 @@ nav li a:hover {
 
 .post {
     float: left;
-    width: 180px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    width: 216px;
+    margin-right: 31px;
+    margin-bottom: 25px;
 }
 
 
@@ -195,33 +193,34 @@ nav li a:hover {
 
 
 .post img {
-    max-height: auto;
-    max-width:180px; 
+    width: 216px;
+    height: auto;
     vertical-align: bottom;
     border: none;
 }
 
 .post h2 {
-    font-size: 15px;
-    margin: 5px;
+    font-size: 16px;
+    margin: 5px 0 0;
+    font-weight:bold;
 }
 
 .post p {
     font-size: 12px;
-    margin: 1px;
+    margin: 10px 0;
 }
 
 .post .data {
     float: left;
-    margin: 10;
+    margin: 0;
 }
 
 .post .more_s {
     float: right;
-    color: #000000;
+    color: #ffffff;
     font-size: 14px;
     font-family: 'Macen Pro', Helvetica, Arial, sans-serif;
-    background-color: #666666;
+    background-color: #e77096;
     background-image: url(img/more.png);
     background-size: 16px;
     background-repeat: no-repeat;
@@ -249,7 +248,83 @@ nav li a:hover {
 
 
 
+/* ### FOOTER ###*/
 
+footer {
+    background-color: #000000;
+    padding: 5px;
+}
+
+
+footer p {
+    float: left;
+    margin-top: 10px;
+    color: #ffffff
+}
+
+#iconmenu {
+    float: right;
+}
+
+#iconmenu ul {
+    margin-top: 0;
+    padding: 3px 0 0;
+}
+
+#iconmenu li {
+    display: inline;
+    list-style-type: none;
+}
+
+#iconmenu img {
+    border: none;
+    width: 30px;
+}
+
+#submenu {
+    clear: both;
+    font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#submenu ul {
+    margin: 3px;
+    padding: 0;
+}
+
+#submenu li {
+    list-style-type: none;
+    float: left;
+}
+
+#submenu li a {
+    display: block;
+    width: auto;
+    border-right: solid 1px #ffffff;
+    text-align: center;
+    text-decoration: none;
+    color: #ff1e97;
+    font-weight: bold;
+    padding-right: 4px;
+    margin-right: 3px;
+}
+
+#submenu li:last-child a {
+    border: none;
+}
+
+#submenu li+li+li+li+li a {
+    border: none;
+}
+
+small {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    color: #ffffff;
+    margin-top: 10px;
+}
 
 
 
